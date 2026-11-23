@@ -1,0 +1,11 @@
+def odd_index_values(numbers):
+    result = []
+    for index, x in enumerate(numbers):
+        if x > 10 and index % 2 != 0:
+            result.append(x)
+    return result
+
+#Index and value
+# "Return a list of numbers where The VALUE is greater than 10 and The INDEX is odd."
+# Example:
+# [20, 15, 30, 5, 8, 25] -> [15, 25]
