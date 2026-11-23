@@ -1,0 +1,15 @@
+def find_valleys(numbers):
+    result = []
+    for index, x in enumerate(numbers):
+        if index == 0 or index == len(numbers) - 1:
+            continue
+        if x < numbers[index -1] and x < numbers[index +1]:
+            result.append(index)
+
+    return result
+
+# Challenge 6: Find the valleys
+#
+# Return numbers that are SMALLER than both
+# the number immediately before them AND
+# the number immediately after them.
